@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: fit-content;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(180deg, rgb(54 185 200), rgb(54 185 200 / 0.6));
+    font-family: 'Quicksand';
+    color: white;
+
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6rem 6rem 1fr;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    grid-column: 1 / -1;
+    grid-row: 1 / span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header h1 {
+    margin: 0;
+}
+
+aside {
+    width: 100%;
+    grid-column: 1 / -1;
+    grid-row: 2 / span 1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+aside h2 {
+    margin: 0;
+}
+
+main {
+    max-width: 100%;
+    max-height: 100%;
+    grid-column: 1 / -1;
+    grid-row: 3 / span 1;
+    /* display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center; */
+
+    margin: 3rem auto;
+    line-height: 0;
+    -webkit-column-count: 5;
+    -webkit-column-gap: 0px;
+    -moz-column-count: 5;
+    -moz-column-gap: 0px;
+    column-count: 3;
+    column-gap: 0;
+
+}
+
+aside span {
+    min-width: 320px;
+}
+
+button {
+    background: #C84637;
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-family: 'Quicksand';
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+input {
+    font-family: 'Quicksand';
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.rendered-img {
+    width: 100%;
+    height: auto;
+}
